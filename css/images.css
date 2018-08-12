@@ -1,0 +1,92 @@
+*[class*=" img-"] {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.img-homepage {
+    background-image: url('../images/homepage.jpg');
+}
+
+.img-concept-1 {
+    background-image: url('../images/concept-1.jpg');
+}
+
+.img-concept-2 {
+    background-image: url('../images/concept-2.jpg');
+}
+
+.img-concept-3 {
+    background-image: url('../images/concept-3.jpg');
+}
+
+.img-verkopen-1 {
+    background-image: url('../images/verkopen-1.jpg');
+}
+
+.img-verkopen-2 {
+    background-image: url('../images/verkopen-2.jpg');
+}
+
+.img-verkopen-3 {
+    background-image: url('../images/verkopen-3.jpg');
+}
+
+.img-contact {
+    background-image: url('../images/contact.jpg');
+}
+
+.img-kalender {
+    background-image: url('../images/kalender.jpg');
+}
+
+.icons {
+    box-sizing: content-box;
+    height: 90px;
+    width: 90px;
+    border-right: 1px solid black;
+    margin-right: 15px;
+    float: left;
+    background-image: url('../images/icon-sprites.png');
+}
+
+.icon-mail {
+    background-position: 0px 0;
+}
+
+.icon-prijslabel {
+    background-position: -90px 0;
+}
+
+.icon-koffietas {
+    background-position: -180px 0;
+}
+
+.icon-speld {
+    background-position: -270px 0;
+}
+
+.icon-jurk {
+    background-position: -360px 0;
+}
+
+.icon-schoenen {
+    background-position: -450px 0;
+}
+
+.icon-tshirt {
+    background-position: -540px 0;
+}
+
+.icon-kleerhanger {
+    background-position: -630px 0;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .img-md-sell {
+        background-image: url('../images/homepage-content.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}

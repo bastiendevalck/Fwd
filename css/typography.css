@@ -1,0 +1,79 @@
+html,
+body {
+  color: var(--text-color);
+  font-family: Open-Sans, sans-serif
+}
+
+h1 {
+  font-family: Playfair Display, serif;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  vertical-align: center;
+}
+
+h2 {
+  font-family: Playfair Display, serif;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+  word-wrap: none;
+  white-space: nowrap;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-size: 1rem;
+  border: 2px solid black;
+}
+
+figcaption, .figure-caption {
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8rem
+}
+
+span.badge.day {
+  color: black;
+  font-family: Playfair Display, serif;
+  font-weight: bold;
+  font-size: 3.5rem;
+  margin-right: 0;
+  padding-right: 0;
+  float: right;
+}
+
+span.badge.month {
+  color: black;
+  font-size: 1.5rem;
+  margin-right: 0;
+  padding-right: 0;
+  float: right;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.navbar {
+  text-transform: uppercase;
+} 
+
+.navbar-nav {
+  text-transform: uppercase;
+} 
+
+
+

@@ -269,7 +269,7 @@ body {
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
-  color: #292b2c;
+  color: #000;
   background-color: #fff;
 }
 
@@ -326,13 +326,13 @@ blockquote {
 }
 
 a {
-  color: #0275d8;
+  color: #000;
   text-decoration: none;
 }
 
 a:focus, a:hover {
-  color: #014c8c;
-  text-decoration: underline;
+  color: #000;
+  text-decoration: none;
 }
 
 a:not([href]):not([tabindex]) {

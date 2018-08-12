@@ -9,9 +9,47 @@ $red:    #d9534f !default;
 $orange: #f0ad4e !default;
 $yellow: #ffd500 !default;
 $green:  #5cb85c !default;
-$blue:   #0275d8 !default;
+$blue:   #53B9DA !default;
 $teal:   #5bc0de !default;
-$pink:   #ff5b77 !default;
+$pink:   #FFDDD5 !default;
 $purple: #613d7c !default;
 
 $grid-gutter-width-base: 0;
+
+
+// navbar
+$navbar-light-color: $black;
+$navbar-light-toggler-border: none;
+$navbar-toggler-border-radius: 0;
+
+$btn-line-height:                1 !default;
+$btn-font-weight:                bold;
+
+$btn-primary-color:              $black;
+$btn-primary-bg:                 #FFDDD5;
+$btn-primary-border:             $black;
+
+$btn-secondary-color:            $black;
+$btn-secondary-bg:               #53B9DA;
+$btn-secondary-border:           $black;
+
+$body-bg:       $white;
+$body-color:    $black;
+$inverse-bg:    $black;
+$inverse-color: $white;
+
+$link-color:            $black;
+$link-decoration:       none;
+$link-hover-color:      $black;
+$link-hover-decoration: none;
+
+$brand-primary:             #53B9DA;
+
+
+$enable-rounded:            false;
+
+$font-size-h1: 2.5rem;
+$font-size-h2: 2rem;
+$font-size-h3: 1.25rem;
+$font-size-h4: 1rem;
+

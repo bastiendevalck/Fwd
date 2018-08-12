@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/vendor/bootstrap.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/images.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/css/gijgo.min.css" rel="stylesheet" type="text/css" />
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
@@ -21,28 +27,21 @@
     <title>Fwd: Verkopen</title>
 </head>
 
-
-
-
-
-
-
-
-<body>
+<body class="blue">
 
     <!---->
     <!-- NAVIGATIE TOP -->
     <!---->
 
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-toggleable-md">
+        <nav class="navbar navbar-light navbar-expand-lg navbar-toggleable-md container-fluid">
+            <a class="navbar-brand brand" href="index.html">
+                <img src="images/logo-navbar-mobile.png" class="d-inline-block align-top" alt="">
+            </a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand brand" href="index.html">
-                <img src="#" width="30" height="30" class="d-inline-block align-top" alt="">
-            </a>
             <div class="collapse navbar-collapse nav-fill" id="navbarNavDropdown">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
@@ -52,21 +51,21 @@
                         <a class="nav-link" href="kalender.html">Kalender</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav my-2 my-lg-0">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" href="verkopen.html">Verkopen</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
-                    <div class="nav-item">
+                    <div class="nav-item hidden-lg-up">
                         <div class="container-fluid">
                             <div class="row">
-                                <div class="col-6 hidden-lg-up" style="background-color: greenyellow">
-                                    <a class="nav-link" data-toggle="modal" data-target="#nav-links" href="index.html">Next sale I Locatie</a>
+                                <div class="col-6">
+                                    <a class="nav-link pink" data-toggle="modal" data-target="#nav-links" href="index.html">Next sale I Locatie</a>
                                 </div>
-                                <div class="col-6 hidden-lg-up" style="background-color: paleturquoise">
-                                    <a class="nav-link" data-toggle="modal" data-target="#nav-rechts" href="#">Inschrijven</a>
+                                <div class="col-6">
+                                    <a class="nav-link blue" data-toggle="modal" data-target="#nav-rechts" href="#">Inschrijven</a>
                                 </div>
                             </div>
                         </div>
@@ -81,13 +80,6 @@
     <!---->
     <!-- BODY -->
     <!---->
-
-    <!-- Tablet hero image + logo -->
-    <!-- Mobile hero image + logo -->
-
-    <div class="hero-image-verkopen hidden-lg-up" style="background-color:green">
-        <h1 class="">Verkopen</h1>
-    </div>
 
     <!-- Desktop navigatie links -->
 
@@ -113,42 +105,9 @@
     <!-- Tablet grid -->
     <!-- Mobile grid -->
 
-    <div class="container-fluid homepage">
+    <div class="container-fluid content verkopen">
         <div class="row">
-
-            <!-- Screen rechts -->
-            <!-- Carousel foto's -->
-
-            <div class="col-6 hidden-md-down" style="background-color:pink">
-                <div clas="row">
-                    <div id="myCarousel2" class="carousel slide" data-ride="carousel">
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="fill" style=" background-color:#48c3af;">
-                                    <img src="" alt="kleren vastgehouden">
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="fill" style=" background-color:#b33f4a;">
-                                    <img src="" alt="kleerkast">
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="fill" style=" background-color:#7fc2f4;">
-                                    <img src="" alt="prijskaartjes">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- Screen rechts -->
-            <!-- Carousel tekst -->
-
-            <div class="col-12 col-lg-6" style="background-color:lightblue">
+            <div class="col-12">
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
@@ -158,13 +117,15 @@
                     </ol>
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="fill" style=" background-color:#48c3af;">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img src="" alt="icoon jurk">
-                                    </div>
-                                    <div class="col-9">
+
+                        <div class="carousel-item active row">
+                            <div class="col-12 col-lg-6 carousel-img img-verkopen-1 ">
+                                <h1 class="hidden-lg-up">Verkopen</h1>
+                            </div>
+                            <div class="col-12 col-lg-6 fill">
+                                <div>
+                                    <div class="col-12 iconed-title">
+                                        <div class="icons icon-jurk"></div>
                                         <h3>Jouw unieke</h3>
                                         <h2>Closet sale</h2>
                                     </div>
@@ -175,55 +136,60 @@
 
                                         </p>
                                     </div>
-                                    <button class="btn btn-primary" data-toggle="modal" data-target="#nav-rechts" type="button">Ik wil een closet sale bij Fwd:</button>
+                                    <button class="btn btn-secondary" data-toggle="modal" data-target="#nav-rechts" type="button">Ik wil een closet sale!</button>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <div class="fill" style=" background-color:#b33f4a;">
-                                <div class="row">
-                                    <div class="col-3">
-                                        <img src="" alt="icoon kleerhanger">
+
+
+                        <div class="carousel-item row">
+                            <div class="col-12 col-lg-6 carousel-img img-verkopen-2 ">
+                                <h1 class="hidden-lg-up">Verkopen</h1>
+                            </div>
+                            <div class="col-12 col-lg-6 fill">
+                                <div>
+                                    <div class="col-12 iconed-title">
+                                        <div class="icons icon-kleerhanger"></div>
+                                        <h3>Let's start</h3>
+                                        <h2>3, 2, 1, Go!</h2>
                                     </div>
-                                    <div class="col-9">
-                                        <h3>Let's start/h3>
-                                            <h2>3, 2, 1, Go!</h2>
+                                    <div class="col-12 stappenplan">
+                                        <ol class="list-group list-group-flush">
+                                            <li class="list-group-item">Kies welke kleren een tweede leven verdienen.
+                                            </li>
+                                            <li class="list-group-item" data-toggle="modal" data-target="#nav-rechts">Meld je hier aan en geef je voorkeuren door.
+                                            </li>
+                                            <li class="list-group-item">We vinden samen met jouw je perfecte verkoopmoment.
+                                            </li>
+                                            <li class="list-group-item">Wij zetten alles klaar wat jij nodig hebt.
+                                            </li>
+                                            <li class="list-group-item">Geniet van je verkoopdag!</li>
+                                        </ol>
                                     </div>
-                                    <div class="col-12">
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">1. Kies welke kleren een tweede leven verdienen.
-                                            </li>
-                                            <li class="list-group-item" data-toggle="modal" data-target="#nav-rechts">2. Meld je hier aan en geef je voorkeuren door.
-                                            </li>
-                                            <li class="list-group-item">3. We vinden samen met jouw je perfecte verkoopmoment.
-                                            </li>
-                                            <li class="list-group-item">4. Wij zetten alles klaar wat jij nodig hebt.
-                                            </li>
-                                            <li class="list-group-item">5. Geniet van je verkoopdag!</li>
-                                        </ul>
-                                    </div>
-                                    <button class="btn btn-primary" data-toggle="modal" data-target="#nav-rechts" type="button">Ik wil een closet sale bij Fwd:</button>
+                                    <button class="btn btn-secondary" data-toggle="modal" data-target="#nav-rechts" type="button">Ik wil een closet sale!</button>
                                 </div>
                             </div>
+
                         </div>
-                        <div class="carousel-item">
-                            <div class="fill" style=" background-color:#7fc2f4;">
-                                <div class="row">
-                                    <div class="col-3 text-right">
-                                        <img src="" alt="icoon prijslabel">
-                                    </div>
-                                    <div class="col-9">
+                        <div class="carousel-item row">
+                            <div class="col-12 col-lg-6 carousel-img img-verkopen-3 ">
+                                <h1 class="hidden-lg-up">Verkopen</h1>
+                            </div>
+                            <div class="col-12 col-lg-6 fill">
+                                <div>
+                                    <div class="col-12 iconed-title">
+                                        <div class="icons icon-prijslabel"></div>
                                         <h3>Hoeveel kost het?</h3>
                                         <h2>Price tag</h2>
                                     </div>
                                     <div class="col-12">
-                                        <div class="pricing card-deck flex-column flex-md-row mb-3">
-                                            <div class="card card-pricing text-center px-3 mb-4">
+                                        <div class="pricing card-deck flex-column flex-md-row mb-4">
+                                            <div class="card card-pricing text-center px-3 mb-">
                                                 <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Shopper</span>
                                                 <div class="bg-transparent card-header pt-4 border-0">
                                                     <h1 class="h1 font-weight-normal text-primary text-center mb-0" data-pricing-value="9">
                                                         <span class="price">9%</span>
-                                                        <span class="h6 text-muted ml-2">/ verkoop</span>
+                                                        <span class="h6 ml-2">/&nbsp;verkoop</span>
                                                     </h1>
                                                 </div>
                                                 <div class="card-body pt-0">
@@ -235,43 +201,43 @@
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="card card-pricing popular shadow text-center px-3 mb-4">
+                                            <div class="card card-pricing popular shadow text-center px-3">
                                                 <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Impulsive shopper</span>
                                                 <div class="bg-transparent card-header pt-4 border-0">
                                                     <h1 class="h1 font-weight-normal text-primary text-center mb-0" data-pricing-value="7">
                                                         <span class="price">7%</span>
-                                                        <span class="h6 text-muted ml-2">/ verkoop</span>
+                                                        <span class="h6 ml-2">/&nbsp;verkoop</span>
                                                     </h1>
                                                 </div>
                                                 <div class="card-body pt-0">
                                                     <ul class="list-unstyled mb-4">
-                                                            <p></p>
-                                                            <li>20-40 kledingstukken</li>
-                                                            <li>6 paar schoenen</li>
-                                                            <li>10 accesoires</li>
+                                                        <p></p>
+                                                        <li>20-40 kledingstukken</li>
+                                                        <li>6 paar schoenen</li>
+                                                        <li>10 accesoires</li>
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <div class="card card-pricing text-center px-3 mb-4">
+                                            <div class="card card-pricing text-center px-3">
                                                 <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">Shopaholic</span>
                                                 <div class="bg-transparent card-header pt-4 border-0">
                                                     <h1 class="h1 font-weight-normal text-primary text-center mb-0" data-pricing-value="5">
                                                         <span class="price">5%</span>
-                                                        <span class="h6 text-muted ml-2">/ verkoop</span>
+                                                        <span class="h6 ml-2">/&nbsp;verkoop</span>
                                                     </h1>
                                                 </div>
                                                 <div class="card-body pt-0">
                                                     <ul class="list-unstyled mb-4">
-                                                            <p></p>
-                                                            <li>40+ kledingstukken</li>
-                                                            <li>6+ schoenen</li>
-                                                            <li>10+ accesoires</li>
+                                                        <p></p>
+                                                        <li>40+ kledingstukken</li>
+                                                        <li>6+ schoenen</li>
+                                                        <li>10+ accesoires</li>
                                                     </ul>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="btn btn-primary" data-toggle="modal" data-target="#nav-rechts" type="button">Ik wil een closet sale bij Fwd:</button>
+                                    <button class="btn btn-secondary" data-toggle="modal" data-target="#nav-rechts" type="button">Ik wil een closet sale!</button>
                                 </div>
                             </div>
                         </div>
@@ -298,24 +264,20 @@
                 <div class="modal-body">
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-10" style="background-color: palegreen">
-                                    <div class="row">
-                                            <div class="col-2 text-right stripe-right">
-                                                <h2 class="display-4">
-                                                    <span class="badge">01</span>
-                                                </h2>
-                                                <h3>
-                                                    <span class="badge-secondary">SEP</span>
-                                                </h3>
-                                            </div>
-                                            <div class="col-10">
+                            <div class="col-10 event">
+                                <div class="row">
+                                    <div class="col-3 text-right stripe-right">
+                                            <span class="badge day">01</span>
+                                            <span class="badge month">sep</span>
+                                    </div>
+                                    <div class="col-9 p-3">
                                         <h3>Next sale by</h3>
                                         <h2>Kato Hoste</h2>
-                                        <button type="button" class="btn btn-outline-primary">Jurken</button>
-                                        <button type="button" class="btn btn-outline-primary">Sneakers</button>
-                                        <button type="button" class="btn btn-outline-primary">Jassen</button>
-                                        <button type="button" class="btn btn-outline-primary">T-shirts</button>
-                                        <button type="button" class="btn btn-outline-primary">Truien</button>
+                                        <span class="badge badge-secondary">Jurken</span>
+                                        <span class="badge badge-secondary">Sneakers</span>
+                                        <span class="badge badge-secondary">Jassen</span>
+                                        <span class="badge badge-secondary">T-shirts</span>
+                                        <span class="badge badge-secondary">Truien</span>
                                     </div>
                                 </div>
                             </div>
@@ -324,22 +286,22 @@
                     <br>
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-10" style="background-color: palegreen">
+                            <div class="col-10">
                                 <div class="row">
-                                    <div class="col-12">
+                                    <div class="col-12 py-3">
                                         <h3>Locatie</h3>
                                         <h2>Dok Noord</h2>
                                     </div>
                                     <div class="col-12">
                                         <iframe src="https://snazzymaps.com/embed/90363" width="100%" height="600px" style="border:none;"></iframe>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 mt-3">
                                         <h4>Adres</h4>
                                         <p>Henri Dunantlaan 10/003
                                             <br> Gentbrugge
                                             <br> België</p>
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-6 mt-3">
                                         <h4>Openingsuren</h4>
                                         <p>Enkel geopend tijdens closet sales
                                             <br> ma-vrij: 10u-18u
@@ -352,10 +314,6 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div> -->
     </div>
 
 
@@ -374,15 +332,13 @@
                 <div class="modal-body">
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-10" style="background-color: palegreen">
+                            <div class="col-10">
                                 <div class="row">
-                                        <div class="col-3">
-                                                <img src="" alt="icoon jurk">
-                                            </div>
-                                            <div class="col-9">
-                                                <h3>Inschrijven</h3>
-                                                <h2>Closet sale</h2>
-                                            </div>
+                                    <div class="col-12 iconed-title">
+                                        <div class="icons icon-jurk"></div>
+                                        <h3>Inschrijven</h3>
+                                        <h2>Closet sale</h2>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -393,32 +349,33 @@
                                 <form>
                                     <div class="form-group row">
                                         <div class="col-6">
-                                            <label for="inputFirstname">Voornaam</label>
+                                            <label for="inputFirstname" hidden>Voornaam</label>
                                             <input type="text" class="form-control" id="inputFirstname" placeholder="Voornaam">
                                         </div>
                                         <div class="col-6">
-                                            <label for="inputLastname">Achternaam</label>
+                                            <label for="inputLastname" hidden>Achternaam</label>
                                             <input type="text" class="form-control" id="inputLastname" placeholder="Achternaam">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-12">
-                                            <label for="inputemail">E-mailadres</label>
+                                            <label for="inputemail" hidden>E-mailadres</label>
                                             <input type="email" class="form-control" id="inputemail" placeholder="E-mailadres">
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-6">
-                                            <label for="inputday">Voorkeur tijdsduur</label>
+                                            <label for="inputday" hidden >Voorkeur tijdsduur</label>
                                             <select class="form-control" id="inputday">
+                                                <option value="" disabled selected>Voorkeur tijdsduur</option>
                                                 <option>Voormiddag</option>
                                                 <option>Namiddag</option>
                                                 <option>Volledige dag</option>
                                             </select>
                                         </div>
                                         <div class="col-6">
-                                            <label for="inputdate">Voorkeur datum</label>
-                                            <input id="datepicker" class="form-control" id="inputdate" />
+                                            <label for="inputdate" hidden>Voorkeur datum</label>
+                                            <input id="datepicker" class="form-control" id="inputdate" placeholder="Voorkeur datum"/>
                                         </div>
                                     </div>
                                     <div class="form-group row">
@@ -427,21 +384,22 @@
                                                 <label for="">Wat wil je verkopen?</label>
                                             </div>
                                             <label class="checkbox-inline">
-                                                <input type="checkbox" value="">T-shirts</label>
+                                                <input type="checkbox" value="1">T-shirts</label>
                                             <label class="checkbox-inline">
-                                                <input type="checkbox" value="">Broeken</label>
+                                                <input type="checkbox" value="1"> Broeken</label>
                                             <label class="checkbox-inline">
-                                                <input type="checkbox" value="">Jassen</label>
+                                                <input type="checkbox" value="1">Jassen</label>
                                             <label class="checkbox-inline">
-                                                <input type="checkbox" value="">Sneakers</label>
+                                                <input type="checkbox" value="1">Sneakers</label>
                                             <label class="checkbox-inline">
-                                                <input type="checkbox" value="">Accesoires</label>
+                                                <input type="checkbox" value="1">Accesoires</label>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-12">
-                                            <label for="inputday">Hoeveel kledingstukken wil je verkopen?</label>
+                                            <label for="inputday" hidden>Hoeveel accesoires wil je verkopen?</label>
                                             <select class="form-control" id="inputday">
+                                                <option value="" disabled selected>Hoeveel accesoires wil je verkopen?</option>
                                                 <option>0-20 kledingstukken</option>
                                                 <option>20-40 kledingstukken</option>
                                                 <option>40+ kledingstukken</option>
@@ -450,24 +408,21 @@
                                     </div>
                                     <div class="form-group row">
                                         <div class="col-12">
-                                            <label for="inputday">Hoeveel accesoires wil je verkopen?</label>
+                                            <label for="inputday" hidden>Hoeveel accesoires wil je verkopen?</label>
                                             <select class="form-control" id="inputday">
+                                                    <option value="" disabled selected>Hoeveel accesoires wil je verkopen?</option>
                                                 <option>0-10 accesoires</option>
                                                 <option>10-25 accesoires</option>
                                                 <option>25+ accesoires</option>
                                             </select>
                                         </div>
                                     </div>
-                                    <button type="button" class="btn btn-primary px-4 float-right">Ja ik wil een closet sale!</button>
+                                    <button type="button" class="btn btn-secondary px-4 float-right">Ja ik wil een closet sale!</button>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div> -->
             </div>
         </div>
     </div>
@@ -480,30 +435,23 @@
     <footer class="footer">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6">
-                    <span>
-                        <a href="https://facebook.com" target="_blank" class="icon-block">
-                            <i class="fa fa-facebook fa-lg"></i>
-                        </a>
-                        <a href="https://twitter.com" target="_blank" class="icon-block">
-                            <i class="fa fa-twitter fa-lg"></i>
-                        </a>
-                        <a href="https://instagram.com" target="_blank" class="icon-block">
-                            <i class="fa fa-instagram fa-lg"></i>
-                        </a>
-
-                    </span>
-                    <span class="hidden-md-down">
-                        <a>Copyright @ 2018 I
-                            <a href="https://www.arteveldehogeschool.be" target="_blank">Artevelde Hogeschool</a> I
-                            <a href="test_file.zip" target="_blank">Dossier</a> I Created by BastienDevalck.</a>
-                    </span>
+                <div class="social col-6 col-lg-3">
+                    <a href="https://www.facebook.com/Fwd-2127611854127192/?modal=admin_todo_tour" target="_blank" class="icon-block">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="icon-block">
+                        <i class="fab fa-instagram fa-lg"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCEInzWKy-5OUhf_EXrWA_hw" target="_blank" class="icon-block">
+                        <i class="fab fa-youtube"></i>
+                    </a>
                 </div>
-                <div class="col-6 hidden-lg-up">
-
-                    <a>Copyright @ 2018 I
-                        <a href="https://www.arteveldehogeschool.be" target="_blank">Artevelde Hogeschool</a> I
-                        <a href="test_file.zip" target="_blank">Dossier</a> I Created by BastienDevalck.</a>
+                <div class="overflow-hidden copyright col-6 hidden-md-up">
+                    <a href="#" target="_blank">Dossier</a>&nbsp;I&nbsp;BastienDevalck.</a>
+                </div>
+                <div class="overflow-hidden copyright col-6 col-lg-9 hidden-md-down">
+                    <a href="https://www.arteveldehogeschool.be" target="_blank">Artevelde Hogeschool</a>&nbsp;I&nbsp;
+                    <a href="#" target="_blank">Dossier</a>&nbsp;I BastienDevalck.</a>
                 </div>
             </div>
         </div>
